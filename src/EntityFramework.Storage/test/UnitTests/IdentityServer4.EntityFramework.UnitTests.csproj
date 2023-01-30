@@ -2,7 +2,9 @@
 
   <PropertyGroup>
     <TargetFrameworks>net7.0</TargetFrameworks>
-
+<AssemblyVersion>4.4.4.0</AssemblyVersion>
+        <FileVersion>4.4.4.0</FileVersion>
+        <PackageVersion>4.4.4.0</PackageVersion>
     <AssemblyOriginatorKeyFile>../../../../key.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <PublicSign Condition="'$(OS)' != 'Windows_NT'">true</PublicSign>
@@ -20,9 +22,6 @@
     
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
   </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="MinVer" Version="4.3.0" />
-  </ItemGroup>
+ 
 
 </Project>
