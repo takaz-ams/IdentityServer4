@@ -33,5 +33,13 @@ steps:
    # platform: '$(buildPlatform)'
     #configuration: '$(buildConfiguration)'
 - task: DotNetCoreCLI@2
+  displayName: 'dotnet pack'
   inputs:
-    command: 'build'
+    command: pack
+    versioningScheme: byEnvVar
+    versionEnvVar: Build.BuildNumber
+- task: DotNetCoreCLI@2
+  displayName: 'dotnet push'
+  inputs:
+    command: push
+    publishVstsFeed: 'add5621a-d35e-4e70-b879-e3876ee94bb1'
