@@ -44,4 +44,7 @@
   <ItemGroup>
     <PackageReference Update="MinVer" Version="4.3.0" />
   </ItemGroup>
+    <PropertyGroup>
+        <MinVerSkip Condition="'$(Configuration)' != 'Debug'">true</MinVerSkip>
+    </PropertyGroup>
 </Project>
