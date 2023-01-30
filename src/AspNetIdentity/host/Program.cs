@@ -60,5 +60,7 @@ namespace IdentityServerHost
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+
+      
     }
 }
