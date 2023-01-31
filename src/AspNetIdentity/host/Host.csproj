@@ -4,6 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <AssemblyVersion>4.4.5.0</AssemblyVersion>
     <FileVersion>4.4.5.0</FileVersion>
+      <PackageVersion>4.4.5.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
