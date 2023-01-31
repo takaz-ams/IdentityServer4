@@ -1,10 +1,9 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
+// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.IdentityModel.Tokens;
 using IdentityServer4.Stores;
 using IdentityServer4.Models;
 using System.Linq;
@@ -34,7 +33,7 @@ namespace IdentityServer4.Services
         }
 
         /// <inheritdoc/>
-        public async Task<SigningCredentials> GetSigningCredentialsAsync(IEnumerable<string> allowedAlgorithms = null)
+        public async Task<Microsoft.IdentityModel.Tokens.SigningCredentials> GetSigningCredentialsAsync(IEnumerable<string> allowedAlgorithms = null)
         {
             if (_signingCredentialStores.Any())
             {
@@ -56,9 +55,9 @@ namespace IdentityServer4.Services
         }
 
         /// <inheritdoc/>
-        public async Task<IEnumerable<SigningCredentials>> GetAllSigningCredentialsAsync()
+        public async Task<IEnumerable<Microsoft.IdentityModel.Tokens.SigningCredentials>> GetAllSigningCredentialsAsync()
         {
-            var credentials = new List<SigningCredentials>();
+            var credentials = new List<Microsoft.IdentityModel.Tokens.SigningCredentials>();
 
             foreach (var store in _signingCredentialStores)
             {
