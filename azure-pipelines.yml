@@ -20,6 +20,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
+    vstsFeed: 'add5621a-d35e-4e70-b879-e3876ee94bb1'
 
 - task: VSBuild@1
   inputs:
