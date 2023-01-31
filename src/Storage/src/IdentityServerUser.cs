@@ -89,9 +89,7 @@ namespace IdentityServer4
                     claims.Add(new Claim(JwtClaimTypes.AuthenticationMethod, amr));
                 }
             }
-
             claims.AddRange(AdditionalClaims);
-
             var id = new ClaimsIdentity(claims.Distinct(new ClaimComparer()), Constants.IdentityServerAuthenticationType, JwtClaimTypes.Name, JwtClaimTypes.Role);
             return new ClaimsPrincipal(id);
         }
