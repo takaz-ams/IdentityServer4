@@ -44,4 +44,7 @@
     <ItemGroup>
       <PackageReference Update="MinVer" Version="4.3.0" />
     </ItemGroup>
+    <PropertyGroup>
+        <MinVerMinimumMajorMinor>4.4</MinVerMinimumMajorMinor>
+    </PropertyGroup>
 </Project>
