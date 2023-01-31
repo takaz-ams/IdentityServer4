@@ -26,5 +26,9 @@
     <ProjectReference Include="..\src\IdentityServer4.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="MinVer" Version="4.3.0" />
+  </ItemGroup>
+
  
 </Project>
